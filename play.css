@@ -1,0 +1,333 @@
+/* Smallest devices (landscape phones, 0-576px) */
+@media (max-width: 576px) {
+  body {
+    margin: auto;
+    width: 90%;
+    padding: 0%;
+    background-color: #fdd35d;
+  }
+
+  @font-face {
+    font-family: retro-font;
+    src: url(fonts/shine.ttf);
+    font-style: normal;
+  }
+
+  .maroon-div {
+    background-color: #5d0300;
+    margin: auto;
+    margin-top: -70px;
+    margin-bottom: 60px;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .orange-div {
+    background-color: #f57f00;
+    margin: auto;
+    width: 97%;
+    height: 97%;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .white-div {
+    background-color: #f8feff;
+    margin: auto;
+    width: 97%;
+    height: 97%;
+    border-radius: 24px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  .main-div {
+    background-image: url(images/logo-no-background-one-colour.png);
+    background-repeat: auto;
+    background-size: 200px;
+    background-color: #fdd35d;
+    border-radius: 30px;
+    text-align: center;
+    width: 97%;
+    width: 97%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .heading {
+    background-color: #ef8200;
+    font-size: 16px;
+    font-family: retro-font;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: auto;
+    border-radius: 26px;
+    color: #fdde8b;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+  #main-heading {
+    color: #5d0300;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-family: retro-font;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #f57f00;
+    padding-top: 40px;
+  }
+
+  h3 {
+    color: #5d0300;
+    font-size: 16px;
+  }
+
+  #logo {
+    width: 148px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  body {
+    margin: auto;
+    width: 80%;
+    padding: 0%;
+    background-color: #fdd35d;
+  }
+
+  @font-face {
+    font-family: retro-font;
+    src: url(fonts/shine.ttf);
+    font-style: normal;
+  }
+
+  .maroon-div {
+    background-color: #5d0300;
+    margin: auto;
+    margin-top: -70px;
+    margin-bottom: 60px;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .orange-div {
+    background-color: #f57f00;
+    margin: auto;
+    width: 97%;
+    height: 97%;
+    border-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .white-div {
+    background-color: #f8feff;
+    margin: auto;
+    width: 97%;
+    height: 97%;
+    border-radius: 24px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  .main-div {
+    background-image: url(images/logo-no-background-one-colour.png);
+    background-repeat: auto;
+    background-size: 200px;
+    background-color: #fdd35d;
+    border-radius: 30px;
+    text-align: center;
+    width: 97%;
+    width: 97%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .heading {
+    background-color: #ef8200;
+    font-size: 16px;
+    font-family: retro-font;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: auto;
+    border-radius: 26px;
+    color: #fdde8b;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+  #main-heading {
+    color: #5d0300;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-family: retro-font;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #f57f00;
+    padding-top: 40px;
+  }
+
+  h2 {
+    padding: 0px 20px 0px 20px;
+  }
+
+  h3 {
+    color: #5d0300;
+    font-size: 16px;
+    padding: 0px 30px 0px 30px;
+  }
+
+  #logo {
+    width: 148px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  body {
+    margin: auto;
+    width: 80%;
+    padding: 0%;
+    background-color: #fdd35d;
+  }
+
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+    body {
+      margin: auto;
+      width: 80%;
+      padding: 0%;
+      background-color: #fdd35d;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    @font-face {
+      font-family: retro-font;
+      src: url(fonts/shine.ttf);
+      font-style: normal;
+    }
+
+    .maroon-div {
+      background-color: #5d0300;
+      margin: auto;
+      margin-top: -70px;
+      margin-bottom: 60px;
+      border-radius: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+
+    .orange-div {
+      background-color: #f57f00;
+      margin: auto;
+      width: 97%;
+      height: 97%;
+      border-radius: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .white-div {
+      background-color: #f8feff;
+      margin: auto;
+      width: 97%;
+      height: 97%;
+      border-radius: 24px;
+      padding-top: 6px;
+      padding-bottom: 10px;
+    }
+
+    .main-div {
+      background-image: url(images/logo-no-background-one-colour.png);
+      background-repeat: auto;
+      background-size: 200px;
+      background-color: #fdd35d;
+      border-radius: 30px;
+      text-align: center;
+      width: 97%;
+      width: 97%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .heading {
+      background-color: #ef8200;
+      font-family: retro-font;
+      letter-spacing: 2px;
+      width: 80%;
+      margin: auto;
+      border-radius: 26px;
+      color: #fdde8b;
+      padding-bottom: 6px;
+      padding-top: 6px;
+    }
+
+    h1 {
+      font-family: retro-font;
+      letter-spacing: 2px;
+      font-size: 32px;
+      color: #f57f00;
+      padding-top: 40px;
+    }
+
+    h3 {
+      color: #5d0300;
+      font-size: 20px;
+    }
+
+    #logo {
+      width: 180px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 60px;
+    }
+
+    #main-heading {
+      color: #5d0300;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+  }
+}

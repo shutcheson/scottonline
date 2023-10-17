@@ -1,0 +1,107 @@
+.banner-section {
+  background-size: cover;
+  background-position: center;
+  border-color: $colour-primary;
+
+  .simplebar-content-wrapper:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $colour-grey-dark;
+    opacity: 0.5;
+  }
+
+  .banner-content {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transform: translateY(-50%);
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 62px;
+      font-weight: 400;
+      color: $colour-white;
+
+      span {
+        font-weight: 600;
+        color: #196d7a;
+      }
+    }
+
+    p {
+      font-size: 28px;
+
+      .cd-words-wrapper {
+        &:after {
+          background-color: #aaa;
+          border-color: $colour-primary;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 34px;
+        }
+
+        b {
+          font-weight: 700;
+          border-bottom: 2px solid #8f803a;
+          color: $colour-white;
+        }
+      }
+    }
+  }
+
+  #video-container {
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .banner-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  #particles-js {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+/*============ Mobile Responsive Css ============*/
+
+/* Tablet View */
+/* Tablets and smaller desktop screens */
+@media (max-width: 1024px) {
+    .banner-content {
+      margin-left: 0px;
+    }
+  }
+  
+  /* Mobile Landscape View */
+  /* Landscape orientation on smaller screens */
+  @media (max-width: 768px) {
+    .banner-content {
+      text-align: center;
+    }
+  }
+  
+  /* Mobile Portrait View */
+  @media (max-width: 480px) {
+    
+  }

@@ -1,0 +1,115 @@
+.about-section {
+  background-image: $colour-fade;
+
+  .about {
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    #scott-name-writing {
+      height: 110px;
+      width: auto;
+    }
+
+    .about-info {
+      ul {
+        li {
+          line-height: 1em;
+          margin-bottom: 15px;
+
+          span.title {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            color: $colour-primary;
+
+            &:after {
+              content: ":";
+              position: absolute;
+              right: -10px;
+            }
+          }
+
+          span.value {
+            color: $colour-grey;
+          }
+        }
+      }
+    }
+  }
+
+  & .services {
+    & .service-item {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      color: $colour-primary;
+
+      & .icon {
+        font-size: 50px;
+        margin-bottom: 10px;
+        line-height: 1em;
+        color: $colour-primary-light;
+      }
+
+      & h4 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      & p {
+        font-size: 14.5px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: $colour-grey-light;
+      }
+    }
+  }
+}
+
+/*============ Mobile Responsive Css ============*/
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+  .about-section .about-info {
+    margin-top: 40px;
+  }
+
+  #scott-name-writing {
+    height: 80px;
+    width: auto;
+  }
+  .about-section .about-info ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+}
+
+/* Large Mobile Landscape View */
+@media screen and (max-width: 916px) {
+  .section-container {
+    width: 82%;
+  }
+}
+
+/* Mobile Landscape View */
+@media screen and (max-width: 768px) {
+  .about-section .about .signature {
+    width: 70%;
+  }
+}
+
+/* Mobile Portrait View */
+@media screen and (max-width: 480px) {
+  #scott-name-writing {
+    height: 70px;
+    width: auto;
+  }
+}

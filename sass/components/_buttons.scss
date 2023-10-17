@@ -1,0 +1,56 @@
+/********** Button **********/
+
+.btn {
+  &--main {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid $colour-grey-light;
+    color: $colour-grey-light;
+    background-color: $colour-primary-mid;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    line-height: 100%;
+    letter-spacing: 1px;
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 1rem rgba($colour-black, 0.2);
+
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+        opacity: 1;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    &:focus {
+      color: $colour-black;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($colour-black, 0.2);
+  }
+}
+
+blockquote {
+  font-size: 18px;
+  color: $colour-white;
+  border-color: $colour-primary;
+  font-style: italic;
+  padding-left: 20px;
+  margin: 40px 0;
+  font-weight: 500;
+}

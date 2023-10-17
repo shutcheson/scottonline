@@ -1,0 +1,146 @@
+.resume-section {
+  background-image: $colour-fade;
+
+  ul.education,
+  ul.experience {
+    margin: 20px 0 50px;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 50px;
+    width: 100%;
+
+    li {
+      position: relative;
+      margin-left: 10px;
+      padding: 20px;
+      transition: all 0.5s ease-in-out;
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+
+      span.line-left {
+        width: 2px;
+        height: 100%;
+        left: -32px;
+        top: 0;
+        position: absolute;
+        background-color: $colour-primary-light;
+
+        &:before,
+        &:after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 2px solid $colour-primary-light;
+          position: absolute;
+          left: -4px;
+          top: -10px;
+        }
+
+        &:after {
+          top: 100%;
+        }
+      }
+    }
+  }
+
+  .education,
+  .experience {
+    .content {
+      margin-left: 32px;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      h5 {
+        margin: 5px 0;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      p.info {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+
+    span.year {
+      height: 100%;
+      top: 0;
+      position: absolute;
+
+      span {
+        font-size: 16px;
+        position: absolute;
+        transform: translateX(-120%);
+        color: $colour-grey-light;
+
+        &.to {
+          top: -18px;
+          left: 10px;
+        }
+        &.from {
+          bottom: -18px;
+          left: 10px;
+        }
+      }
+    }
+  }
+
+  .skills {
+    margin-bottom: 30px;
+
+    .skill-item {
+      padding: 0 20px;
+    }
+  }
+}
+
+/* Tablet View */
+/* Tablets and smaller desktop screens */
+@media (max-width: 1024px) {
+  .banner-content {
+    margin-left: 0px;
+  }
+}
+
+/* Mobile Landscape View */
+/* Landscape orientation on smaller screens */
+@media (max-width: 768px) {
+  .banner-content {
+    text-align: center;
+  }
+}
+
+/* Mobile Portrait View */
+@media (max-width: 480px) {
+  .resume-section {
+    ul.education,
+    ul.experience {
+      padding: 0;
+
+      span.year {
+        left: 42px;
+
+        & .today {
+          left: 10px;
+        }
+      }
+    }
+
+    .skills {
+      .skill-item {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.page-heading {
+  text-align: center;
+  color: $colour-primary;
+}
+
+.site-info {
+  flex: 1;
+  padding: 0% 10% 10% 10%;
+}
+
+.site-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-images img {
+  width: 90vh;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paragraph-link {
+  border: 1px solid $colour-primary;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: $colour-grey-dark;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  color: $colour-primary;
+  font-weight: 500;
+  position: relative;
+  line-height: 100%;
+  letter-spacing: 1px;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1rem rgba($colour-black, 0.2);
+    background-color: $colour-grey;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      opacity: 1;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+/*============ Mobile Responsive Css ============*/
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+  .popup-close {
+    padding-top: 32px;
+  }
+}
+
+/* Large Mobile Landscape View */
+@media screen and (max-width: 916px) {
+}
+
+/* Mobile Landscape View */
+@media screen and (max-width: 768px) {
+}
+
+/* Mobile Portrait View */
+@media screen and (max-width: 480px) {
+}
