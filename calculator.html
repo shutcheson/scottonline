@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="page-heading">
+      <h2>Calculator</h2>
+    </div>
+
+    <div class="site-info">
+
+      <div class="row pb-40 pt-40">
+        <div class="col-1-of-2">
+          <button id="cf-submit" class="btn--main">
+            <a href="" target="_blank">View Website</a>
+          </button>
+        </div>
+
+      </div>
+      
+      <div class="site-images">
+        <img src="" alt="Calculator" />
+      </div>
+
+      <form id="myForm" name="calc">
+      <div class="topSection">
+        <input
+          name="displayTop"
+          class="displayTop"
+          id="displayTop"
+          placeholder="0"
+        />
+        <input name="displayBottom" class="displayBottom" placeholder="0" />
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content nonNumberEl">
+          <p>Scientific functions</p>
+          <input
+            type="button"
+            value="&#8508;"
+            id="pi--Btn"
+            class="arithmetic btn"
+          />
+          <input
+            type="button"
+            value="e"
+            id="e--Btn"
+            class="arithmetic nonNumberEl btn"
+          />
+          <input
+            type="button"
+            value="&sup2;"
+            id="dec--Btn"
+            class="arithmetic btn"
+          />
+          <input type="button" value="CANCEL" class="btn" id="canc--Btn" />
+        </div>
+      </div>
+      <!-- LINE 6 -->
+      <input type="button" id="myBtn" value=" ..." class="nonNumberEl btn" />
+      <input type="button" value=" " class="btn" />
+
+      <input type="button" value=" " class="btn" />
+      <input
+        type="button"
+        class="nonNumberEl btn"
+        value="CE"
+        onclick="backspaceDisplay()"
+      />
+
+      <!-- LINE 5 -->
+      <input
+        type="button"
+        value="C"
+        class="nonNumberEl btn"
+        onclick="clearDisplay()"
+      />
+
+      <input type="button" value="()" id="brac--Btn" class="nonNumberEl btn" />
+
+      <input
+        type="button"
+        value="&percnt;"
+        class="nonNumberEl btn"
+        onclick="displayPercentage()"
+      />
+
+      <input
+        type="button"
+        value="&#247;"
+        id="div--Btn"
+        class="arithmetic nonNumberEl btn"
+      />
+      <!-- LINE 4 -->
+      <input type="button" value="7" class="numbers btn" onclick="display7()" />
+      <input type="button" value="8" class="numbers btn" onclick="display8()" />
+      <input type="button" value="9" class="numbers btn" onclick="display9()" />
+
+      <input
+        type="button"
+        value="x"
+        id="mult--Btn"
+        class="arithmetic nonNumberEl btn"
+      />
+      <!-- LINE 3 -->
+
+      <input type="button" value="4" class="numbers btn" onclick="display4()" />
+      <input type="button" value="5" class="numbers btn" onclick="display5()" />
+      <input type="button" value="6" class="numbers btn" onclick="display6()" />
+
+      <input
+        type="button"
+        value="-"
+        id="minus--Btn"
+        class="arithmetic nonNumberEl btn"
+      />
+      <!-- LINE 2 -->
+      <input type="button" value="1" class="numbers btn" onclick="display1()" />
+      <input type="button" value="2" class="numbers btn" onclick="display2()" />
+      <input type="button" value="3" class="numbers btn" onclick="display3()" />
+
+      <input
+        type="button"
+        value="+"
+        id="add--Btn"
+        class="arithmetic nonNumberEl btn"
+      />
+      <!-- LINE 1 -->
+      <input
+        type="button"
+        value="00"
+        class="numbers btn"
+        onclick="display00()"
+      />
+      <input type="button" value="0" class="numbers btn" onclick="display0()" />
+
+      <input type="button" value="." id="dec--Btn" class="arithmetic btn" />
+
+      <input type="button" value="=" class="priorityBtn btn" id="equals--Btn" />
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="popup-text">Expression is incorrect</span>
+        </div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+    <div>
+  </body>
+</html>
