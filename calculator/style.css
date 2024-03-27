@@ -1,0 +1,188 @@
+#myForm {
+  /*edit the whole form*/
+  margin-top: 100px;
+  padding: 4px;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #edf1f4, 20%, #f3f3f3);
+  margin-left: auto;
+  margin-right: auto;
+  width: 348px;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.topSection {
+  height: 140px;
+  border-radius: 4px;
+}
+
+input {
+  /*edit all the buttons*/
+  width: 76px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0px 1px #d7d7d7;
+  border: none;
+  outline: none;
+}
+
+.btn::after {
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-in-out 0.75s;
+  animation-fill-mode: backwards;
+}
+/* ::-webkit-input-placeholder {
+  color: black;
+} */
+
+.displayTop {
+  /*edit the section where equations are displayed*/
+  width: 340px;
+  max-height: 50%;
+  text-align: center;
+  background-color: transparent;
+  color: #959595;
+  border: none;
+  box-shadow: none;
+  font-size: 28px;
+  text-align: right;
+}
+
+.displayBottom {
+  /*edit the section where equations are displayed*/
+  width: 340px;
+  max-height: 50%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 38px;
+  text-align: right;
+}
+
+#equals.value {
+  color: white;
+}
+
+.nonNumberEl {
+  font-weight: 550;
+  color: #3e51ba !important;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-text {
+  font-size: 18px;
+}
+
+.priorityBtn {
+  background-color: #3e51ba;
+  color: #fffffd;
+}
+
+.arithmetic.value {
+  font-size: 3px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  font-size: 18px;
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(45deg, #edf1f4, 20%, #f3f3f3);
+  margin: auto;
+  padding: 20px;
+  width: 264px;
+  border-radius: 4px;
+}
+
+#canc--Btn {
+  /* padding-left: 30px; */
+  text-align: center !important;
+  width: 160px !important;
+  margin: auto !important;
+  display: flex !important;
+  display: grid !important;
+  font-weight: 500;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  /* CSS styles for tablets and smaller desktop screens */
+}
+
+/* Mobile Landscape View */
+@media (max-width: 768px) {
+  /* CSS styles for landscape orientation on smaller screens */
+}
+
+/* Mobile Portrait View */
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+  #myForm {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90%;
+  }
+}
