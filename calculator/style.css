@@ -7,9 +7,13 @@
   margin-right: auto;
   width: 400px;
 }
+
+.calc-buttons {
+  margin: 10px;
+}
+
 #myForm {
   /*edit the whole form*/
-  
   border-radius: 6px;
   background: linear-gradient(45deg, #edf1f4, 20%, #f3f3f3);
   margin-left: auto;
@@ -19,17 +23,18 @@
 }
 
 .topSection {
-  height: 140px;
+  height: 100%;
   border-radius: 4px;
+  margin: 10px
 }
 
 input {
   /*edit all the buttons*/
-  width: 76px;
+  width: 90%;
   height: 50px;
   font-size: 18px;
   font-weight: 500;
-  margin: 4px;
+  padding: 4px;
   border-radius: 4px;
   background-color: #ffffff;
   color: #1d1d1d;
