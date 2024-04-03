@@ -15,7 +15,7 @@
 
 #myForm {
   /*edit the whole form*/
-  height: 416px;
+  height: 468px;
   border-radius: 6px;
   background: linear-gradient(45deg, #edf1f4, 20%, #f3f3f3);
   margin-left: auto;
@@ -47,6 +47,9 @@ input {
   outline: none;
 }
 
+.btn {
+  margin-top: 8px;
+}
 .btn::after {
   z-index: -1;
   transition: all 0.4s;
