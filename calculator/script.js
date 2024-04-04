@@ -14,10 +14,18 @@ const multBtn = document.querySelector("#mult--Btn");
 const divBtn = document.querySelector("#div--Btn");
 const bracBtn = document.querySelector("#brac--Btn");
 
+const micBtn = document.querySelector("#microphone");
+
+
 // modal elements
 const piBtn = document.querySelector("#pi--Btn");
 const eBtn = document.querySelector("#e--Btn");
 const cancBtn = document.querySelector("#canc--Btn");
+
+//pop up alert
+const popup = document.getElementById("popup");
+
+const arithCheck = /(\*|=|-|\+|\/|\.|\()$/g;
 
 const init = function () {
   evalBottom.textContent = 0;
@@ -94,19 +102,15 @@ function display00() {
 decBtn.addEventListener("click", function () {
   if (isInvalid()) {
   } else if (calc.displayTop.value === "") {
-    calc.displayTop.value += "0.";
-    calc.displayBottom.value += "0.";
   } else {
-    calc.displayTop.value += ".";
-    calc.displayBottom.value += ".";
+    calc.displayTop.value += "/";
+    calc.displayBottom.value += "/";
   }
 });
 
 // Minus button
 minusBtn.addEventListener("click", function () {
-  if (isInvalid()) {
-  } else if (calc.displayTop.value === "") {
-  } else {
+  if (!isInvalid() && calc.displayTop.value !== "") {
     calc.displayTop.value += "-";
     calc.displayBottom.value += "-";
   }
@@ -154,26 +158,35 @@ function backspaceDisplay() {
   calc.displayTop.value = calc.displayTop.value.slice(0, -1);
 }
 
-// equals button
-// eqBtn.addEventListener("click", function () {
-//   if (
-//     arithCheck.test(calc.displayBottom.value) &&
-//     arithCheck.test(calc.displayTop.value) != arithmetic
-//   ) {
-//   } else if (calc.displayTop.value === "") {
-//   } else {
-//     calc.displayTop.value += "=";
-//     calc.displayBottom.value = eval(calc.displayBottom.value);
-//   }
-// });
-
 eqBtn.addEventListener("click", function () {
   if (isInvalid()) {
+    showPopup();
+    // Handle invalid expression (you can add code here if needed)
   } else if (calc.displayTop.value === "") {
+    // Handle empty displayTop (you can add code here if needed)
   } else {
-    calc.displayBottom.value = eval(calc.displayBottom.value);
+    try {
+      const result = eval(calc.displayBottom.value);
+      calc.displayBottom.value = result;
+    } catch (error) {
+      // Handle any errors that may occur during evaluation
+    }
   }
 });
+
+// Function to show the popup
+function showPopup() {
+  popup.style.display = "block";
+  // Hide the popup after 2 seconds (adjust the delay as needed)
+  setTimeout(() => {
+    hidePopup();
+  }, 2000);
+}
+
+// Function to hide the popup
+function hidePopup() {
+  popup.style.display = "none";
+}
 
 // percentage button
 function displayPercentage() {
@@ -182,14 +195,35 @@ function displayPercentage() {
 
 // Brackets button
 bracBtn.addEventListener("click", function () {
+  const currentDisplayTop = calc.displayTop.value;
+  const currentDisplayBottom = calc.displayBottom.value;
+
+  // Define a regular expression to check for arithmetic operators
+  const arithmeticOperators = /[+\-*/]/;
+
   if (
-    arithCheck.test(calc.displayBottom.value) &&
-    arithCheck.test(calc.displayTop.value) != arithmetic
+    arithmeticOperators.test(currentDisplayTop.slice(-1)) ||
+    currentDisplayTop === ""
   ) {
-  } else if (calc.displayTop.value === "") {
+    // If the last character in displayTop is an operator or displayTop is empty, add an opening parenthesis
+    calc.displayTop.value += "(";
+    calc.displayBottom.value += "(";
+  } else if (arithCheck.test(currentDisplayBottom)) {
+    // If the last character in displayBottom is an operator, append an opening parenthesis
+    calc.displayTop.value += "(";
+    calc.displayBottom.value += "(";
   } else {
-    calc.displayTop.value = "(" + calc.displayTop.value + ")";
-    calc.displayBottom.value = "(" + calc.displayBottom.value + ")";
+    // If none of the above conditions match, check if the last character in displayTop is a number
+    const lastCharTop = currentDisplayTop.slice(-1);
+    if (!isNaN(lastCharTop) || lastCharTop === ".") {
+      // If the last character in displayTop is a number or a decimal point, add a closing parenthesis
+      calc.displayTop.value += ")";
+      calc.displayBottom.value += ")";
+    } else {
+      // Otherwise, add an opening parenthesis
+      calc.displayTop.value += "(";
+      calc.displayBottom.value += "(";
+    }
   }
 });
 
@@ -241,22 +275,17 @@ let speech = new SpeechSynthesisUtterance();
 
 // Modal
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+const btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn.onclick = function () {
   modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
