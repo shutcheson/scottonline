@@ -16,7 +16,6 @@ const bracBtn = document.querySelector("#brac--Btn");
 
 const micBtn = document.querySelector("#microphone");
 
-
 // modal elements
 const piBtn = document.querySelector("#pi--Btn");
 const eBtn = document.querySelector("#e--Btn");
@@ -107,6 +106,13 @@ decBtn.addEventListener("click", function () {
     calc.displayBottom.value += "/";
   }
 });
+
+function decButton() {
+  if (!isInvalid() && calc.displayTop.value !== "") {
+    calc.displayBottom.value += ".";
+    calc.displayTop.value += ".";
+  }
+}
 
 // Minus button
 minusBtn.addEventListener("click", function () {
