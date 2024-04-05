@@ -13,6 +13,7 @@ const addBtn = document.querySelector("#add--Btn");
 const multBtn = document.querySelector("#mult--Btn");
 const divBtn = document.querySelector("#div--Btn");
 const bracBtn = document.querySelector("#brac--Btn");
+
 const micBtn = document.querySelector("#microphone");
 
 // modal elements
@@ -99,12 +100,25 @@ function display00() {
 // decimal button
 decBtn.addEventListener("click", function () {
   if (isInvalid()) {
-  } else if (calc.displayTop.value === "") {
-    calc.displayTop.value += "0.";
-    calc.displayBottom.value += "0.";
-  } else {
-    calc.displayTop.value += ".";
-    calc.displayBottom.value += ".";
+    return; // Exit the function early if the input is invalid
+  }
+
+  // Check if there's already a decimal point in the top display
+  if (!calc.displayTop.value.includes(".")) {
+    if (calc.displayTop.value === "") {
+      calc.displayTop.value = "0.";
+    } else {
+      calc.displayTop.value += ".";
+    }
+  }
+
+  // Check if there's already a decimal point in the bottom display
+  if (!calc.displayBottom.value.includes(".")) {
+    if (calc.displayBottom.value === "") {
+      calc.displayBottom.value = "0.";
+    } else {
+      calc.displayBottom.value += ".";
+    }
   }
 });
 
@@ -167,7 +181,8 @@ eqBtn.addEventListener("click", function () {
   } else {
     try {
       const result = eval(calc.displayBottom.value);
-      calc.displayBottom.value = result;
+      // Round the result to 10 decimal places
+      calc.displayBottom.value = parseFloat(result).toFixed(10);
     } catch (error) {
       // Handle any errors that may occur during evaluation
     }
@@ -191,6 +206,7 @@ function hidePopup() {
 // percentage button
 function displayPercentage() {
   calc.displayBottom.value = calc.displayBottom.value / 100;
+  calc.displayTop.value += "/100";
 }
 
 // Brackets button
@@ -258,6 +274,20 @@ eBtn.addEventListener("click", function () {
 cancBtn.addEventListener("click", function () {
   return (modal.style.display = "none");
 });
+
+// Text to speech trial
+let convert = document.querySelector(".convert");
+let textarea = document.querySelector(".textarea");
+let speech = new SpeechSynthesisUtterance();
+
+// convert.addEventListener("click", () => {
+//   speech.text = textarea.value;
+//   speech.pitch = 3;
+//   speech.volume = 1;
+//   speech.lang = "eng-US";
+//   speech.rate = 1.25;
+//   speechSynthesis.speak(speech);
+// });
 
 // Modal
 // Get the modal
