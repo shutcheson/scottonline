@@ -1,10 +1,5 @@
-/*============ 1. Body and Core Css ============*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 
- * Animation keyframes
- * Use transition opacity instead of keyframes
-
+* Imports
 @import url(venders/animations.css);
 @import url(venders/bootstrap.css);
 @import url(venders/font-awesome.css);
@@ -445,108 +440,148 @@ header .header-mobile .header-toggle i {
 
 
 @media screen and (max-width: 767px) {
+  /* Header transition for smaller screens */
   header .header-main {
     left: -240px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+  }
+  
   header .header-main h2 {
-    display: none !important; }
+    display: none !important;
+  }
+
+  /* Display header mobile */
   header .header-mobile {
     display: block;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Adjust header main position when header content is toggled */
   header .header-content.on .header-main {
-    left: 0px; } }
+    left: 0px;
+  }
+  
+}
 
 @media screen and (min-height: 610px) {
+  /* Adjust header main position for minimum height */
   .header-main {
     position: absolute;
     bottom: 0;
-    left: 0; } }
+    left: 0;
+  }
+}
 
 /*============ Mobile Responsive Css ============*/
 /* Tablet View */
 @media screen and (max-width: 1024px) {
+  /* Adjust padding for header mobile */
   .header-mobile {
-    padding: 0px 8px; } }
+    padding: 0 8px;
+  }
+}
 
 /* Mobile Landscape View */
 @media screen and (max-width: 768px) {
+  /* Header transition for smaller screens */
   header .header-main {
     left: -240px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hide h2 in header */
   header .header-main h2 {
-    display: none !important; }
+    display: none !important;
+  }
+
+  /* Display header mobile */
   header .header-mobile {
     display: block;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Adjust header main position when header content is toggled */
   header .header-content.on .header-main {
-    left: 0px; } }
+    left: 0;
+  }
+}
 
 /* Mobile Portrait View */
 @media screen and (min-height: 610px) {
+  /* Positioning footer at the bottom */
   .nav-footer {
     position: absolute;
     bottom: 0;
-    left: 0; } }
+    left: 0;
+  }
+}
 
-@media screen and (min-height: 610px) {
-  .nav-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0; } }
-
-/***pages***/
+/*** Pages ***/
 .about-section {
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%); }
-  .about-section .about h3 {
-    font-size: 22px;
-    font-weight: 700; }
-  .about-section .about #scott-name-writing {
-    height: 110px;
-    width: auto; }
-  .about-section .about .about-info ul li {
-    line-height: 1em;
-    margin-bottom: 15px; }
-    .about-section .about .about-info ul li span.title {
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      position: relative;
-      display: inline-block;
-      margin-right: 15px;
-      color: #196D7A; }
-      .about-section .about .about-info ul li span.title:after {
-        content: ":";
-        position: absolute;
-        right: -10px; }
-    .about-section .about .about-info ul li span.value {
-      color: #c7c7c7; }
-  .about-section .services .service-item {
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-    color: #196D7A; }
-    .about-section .services .service-item .icon {
-      font-size: 50px;
-      margin-bottom: 10px;
-      line-height: 1em;
-      color: #897F5F; }
-    .about-section .services .service-item h4 {
-      font-size: 18px;
-      font-weight: 600; }
-    .about-section .services .service-item p {
-      font-size: 14.5px;
-      line-height: 22px;
-      margin-bottom: 15px;
-      margin-top: 15px;
-      color: #FBFBFA; }
+  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+}
+
+.about-section .about h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.about-section .about #scott-name-writing {
+  height: 110px;
+  width: auto;
+}
+
+.about-section .about .about-info ul li {
+  line-height: 1em;
+  margin-bottom: 15px;
+}
+
+.about-section .about .about-info ul li span.title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  color: #196D7A;
+}
+
+.about-section .about .about-info ul li span.title:after {
+  content: ":";
+  position: absolute;
+  right: -10px;
+}
+
+.about-section .about .about-info ul li span.value {
+  color: #c7c7c7;
+}
+
+.about-section .services .service-item {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  color: #196D7A;
+}
+
+.about-section .services .service-item .icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1em;
+  color: #897F5F;
+}
+
+.about-section .services .service-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-section .services .service-item p {
+  font-size: 14.5px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #FBFBFA;
+}
 
 /*============ Mobile Responsive Css ============*/
 /* Tablet View */
