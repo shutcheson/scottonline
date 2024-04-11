@@ -13,6 +13,9 @@
 @import url(venders/jquery.animatedheadline.css);
 @import url(venders/linear-icons.css);
 @import url(venders/magnific-popup.css);
+@import url(venders/owl.carousel.min.css);
+@import url(venders/owl.theme.default.min.css);
+@import url(venders/simplebar.css);
 
 @-webkit-keyframes loading {
   0% {
