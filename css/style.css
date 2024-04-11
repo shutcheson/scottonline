@@ -813,12 +813,14 @@ textarea {
   align-items: center; }
 
 .site-images img {
-  width: 90vw;
-  height: auto; }
+  width: 90vh;
+  height: auto; 
+}
 
 .row {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around; 
+}
 
 .paragraph-link {
   border: 1px solid #196D7A;
@@ -1163,15 +1165,29 @@ textarea {
 @media (max-width: 480px) {
   .resume-section ul.education,
   .resume-section ul.experience {
-    padding: 0; }
-    .resume-section ul.education span.year,
-    .resume-section ul.experience span.year {
-      left: 42px; }
-      .resume-section ul.education span.year .today,
-      .resume-section ul.experience span.year .today {
-        left: 10px; }
+    padding: 0; 
+  }
+  
+  .resume-section ul.education span.year,
+  .resume-section ul.experience span.year {
+    left: 42px; 
+  }
+  
+  .resume-section ul.education span.year .today,
+  .resume-section ul.experience span.year .today {
+    left: 10px;
+  }
+  
   .resume-section .skills .skill-item {
-    padding: 0; } }
+    padding: 0; 
+  } 
+  
+  .site-images img {
+  width: 90vw;
+  height: auto; 
+  }
+}
+
 
 /***venders***/
 /*3rd party css (bootstrap., animations etc)*/
