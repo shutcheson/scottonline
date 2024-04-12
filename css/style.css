@@ -1194,6 +1194,16 @@ textarea {
   .resume-section ul.experience {
     padding: 0; 
   }
+
+/* Small Mobile View */
+@media (max-width: 400px) {
+  .calc-container {
+    width: 90%;
+    height: 640px;
+
+  }
+  }
+  
   
   .resume-section ul.education span.year,
   .resume-section ul.experience span.year {
