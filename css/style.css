@@ -817,6 +817,11 @@ textarea {
   height: auto; 
 }
 
+#design1 {
+  height: 66vh !important;
+  width: auto !important;
+}
+
 .row {
   display: flex;
   justify-content: space-around; 
