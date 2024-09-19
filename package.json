@@ -1,7 +1,7 @@
 {
   "name": "scott-hutcheson-portfolio",
   "version": "1.0.0",
-  "description": "Scott Hutchesons portfolio website",
+  "description": "Scott Hutcheson's portfolio website",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.0",
-    "live-server": "^1.1.0"
+    "live-server": "^1.1.0",
+    "sass": "^1.79.1"
   }
 }
