@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/shutcheson/scott-hutcheson-portfolio-2#readme",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "sass": "^1.79.3"
   },
   "dependencies": {
     "jquery": "^3.7.0",
-    "live-server": "^1.1.0",
-    "sass": "^1.79.1"
+    "live-server": "^1.1.0"
   }
 }
