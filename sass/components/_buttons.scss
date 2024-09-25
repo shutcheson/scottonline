@@ -2,9 +2,8 @@
 
 .btn {
   &--main {
-    border-radius: 5px;
+    border-radius: 60px;
     padding: 10px 20px;
-    border: 1px solid $colour-grey-light;
     color: $colour-grey-light;
     background-color: $colour-primary-mid;
     -webkit-transition: all 0.3s ease;
@@ -33,7 +32,7 @@
     }
 
     &:focus {
-      color: $colour-black;
+      color: $colour-white;
     }
   }
 
