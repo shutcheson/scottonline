@@ -4,7 +4,7 @@
   "description": "Scott Hutcheson's portfolio website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/shutcheson/scott-hutcheson-portfolio-2#readme",
   "devDependencies": {
-    "node-sass": "^9.0.0",
     "sass": "^1.79.3"
   },
   "dependencies": {

@@ -7,6 +7,7 @@
     
     .contact-info {
         text-align: center;
+        width: 100%;;
 
         .info-item {
             .icon {
@@ -47,8 +48,8 @@
 
     &__field {
         width: 100%;
-        border: 2px solid #999;
-        border-radius: 6px;
+        border: 1px solid #999;
+        border-radius: 10px;
         padding: 5px 10px;
         -webkit-transition: all .5s ease;
         -o-transition: all .5s ease;

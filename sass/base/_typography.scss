@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Helvetica;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -26,11 +26,10 @@ body {
 
 .heading-secondary {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 1em;
-  text-transform: capitalize;
-  color: $colour-primary;
+  color: $colour-heading-primary;
 }
 
 .heading-tertiary {
@@ -39,7 +38,6 @@ body {
   color: $colour-grey-light;
   line-height: 1em;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   border-bottom: 1.4px solid $colour-primary-light;
   margin-top: 12px;
   padding-bottom: 4px;
