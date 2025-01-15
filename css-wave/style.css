@@ -1,0 +1,128 @@
+body {
+    background: #000000;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+    font-size: 50px;
+    top: -50%;
+    right: -25%;
+  }
+  
+  .wave {
+    border: 7px solid;
+    position: absolute;
+  
+    transform: rotate(-44.5deg);
+    animation: wave 2s infinite alternate;
+  }
+  
+  @keyframes wave {
+    to {
+      transform: rotate(245deg);
+    }
+  }
+  
+  .wave:nth-child(10) {
+    width: 9.5125em;
+    height: 9.5125em;
+    bottom: -4.75625em;
+    left: 0.24375em;
+    border-color: transparent transparent #81008d #81008d;
+    border-radius: 9.5125em;
+    animation-delay: 75ms;
+  }
+  
+  .wave:nth-child(9) {
+    width: 9.025em;
+    height: 9.025em;
+    bottom: -4.5125em;
+    left: 0.4875em;
+    border-color: transparent transparent #74008d #74008d;
+    border-radius: 9.025em;
+    animation-delay: 150ms;
+  }
+  
+  .wave:nth-child(8) {
+    width: 8.5375em;
+    height: 8.5375em;
+    bottom: -4.26875em;
+    left: 0.73125em;
+    border-color: transparent transparent #66008d #66008d;
+    border-radius: 8.5375em;
+    animation-delay: 225ms;
+  }
+  
+  .wave:nth-child(7) {
+    width: 8.025em;
+    height: 8.025em;
+    bottom: -4.025em;
+    left: 0.975em;
+    border-color: transparent transparent #59008d #59008d;
+    border-radius: 8.025em;
+    animation-delay: 300ms;
+  }
+  
+  .wave:nth-child(6) {
+    width: 7.5625em;
+    height: 7.5625em;
+    bottom: -3.78125em;
+    left: 1.21875em;
+    border-color: transparent transparent #4c008d #4c008d;
+    border-radius: 7.5625em;
+    animation-delay: 375ms;
+  }
+  
+  .wave:nth-child(5) {
+    width: 7.075em;
+    height: 7.075em;
+    bottom: -3.5375em;
+    left: 1.46225em;
+    border-color: transparent transparent #3e008d #3e008d;
+    border-radius: 7.075em;
+    animation-delay: 450ms;
+  }
+  
+  .wave:nth-child(4) {
+    width: 6.5875em;
+    height: 6.5875em;
+    bottom: -3.29375em;
+    left: 1.706625em;
+    border-color: transparent transparent #31008d #31008d;
+    border-radius: 6.5875em;
+    animation-delay: 525ms;
+  }
+  
+  .wave:nth-child(3) {
+    width: 6.1em;
+    height: 6.1em;
+    bottom: -3.05em;
+    left: 1.95em;
+    border-color: transparent transparent #24008d #24008d;
+    border-radius: 6.1em;
+    animation-delay: 600ms;
+  }
+  
+  .wave:nth-child(2) {
+    width: 5.6125em;
+    height: 5.6125em;
+    bottom: -2.80625em;
+    left: 2.19375em;
+    border-color: transparent transparent #16008d #16008d;
+    border-radius: 5.6125em;
+    animation-delay: 675ms;
+  }
+  
+  .wave:nth-child(1) {
+    width: 5.125em;
+    height: 5.125em;
+    bottom: -2.5625em;
+    left: 2.4375em;
+    border-color: transparent transparent #09008d #09008d;
+    border-radius: 5.125em;
+    animation-delay: 750ms;
+  }
+  
