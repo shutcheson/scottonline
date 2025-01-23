@@ -52,7 +52,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
 }
 
 body {
@@ -277,7 +277,7 @@ blockquote {
   top: 0;
   height: 100%;
   width: 240px;
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
   overflow: auto;
   left: 0;
   overflow-x: hidden;
@@ -481,7 +481,7 @@ header .header-mobile .header-toggle i {
 }
 /***pages***/
 .about-section {
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
 }
 .about-section .about h3 {
   font-size: 22px;
@@ -573,7 +573,7 @@ header .header-mobile .header-toggle i {
   }
 }
 .contact-section {
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
 }
 .contact-section #map {
   width: 100%;
@@ -815,7 +815,7 @@ textarea {
 /* Mobile Landscape View */
 /* Mobile Portrait View */
 .portfolio-section {
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
   overflow: hidden;
 }
 .portfolio-section .portfolio-filter {
@@ -1016,7 +1016,7 @@ textarea {
   }
 }
 .resume-section {
-  background-image: linear-gradient(to top, #0b1e24 0%, #141719 35%, #141719 100%);
+  background-color: #121212;
 }
 .resume-section ul.education,
 .resume-section ul.experience {
