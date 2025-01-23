@@ -393,8 +393,10 @@ header .header-mobile .header-toggle i {
   margin-right: 10px;
 }
 .header-main .nav-footer .social li a {
-  color: #fff;
-  transition: color 0.2s ease;
+  text-decoration: none;
+  color: white; 
+  font-size: 36px;
+  transition: color 0.3s ease;
 }
 .header-main .nav-footer .social li a:hover {
   color: #fff;
